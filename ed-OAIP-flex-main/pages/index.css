@@ -1,0 +1,37 @@
+@import url("../vendor/normalize.css");
+@import url("../fonts/fonts.css");
+
+/*body*/
+@import url("../blocks/body/body.css");
+
+/*header*/
+@import url("../blocks/header/header.css");
+/*header__title*/
+@import url("../blocks/header/__title/header__title.css");
+@import url("../blocks/header/__list/header__list.css");
+@import url("../blocks/header/__nav/header__nav.css");
+@import url("../blocks/catalog/catalog.css");
+@import url("../blocks/catalog/__card/catalog__card.css");
+@import url("..//blocks/catalog/__cards/catalog__cards.css");
+@import url("../blocks/catalog/__card-image/catalog__card-image.css");
+@import url("..//blocks/catalog/__card-title/catalog__card-title.css");
+@import url("..//blocks/catalog/__card-button/catalog__card-button.css");
+@import url("../blocks/catalog/__card-price/catalog__card-price.css");
+@import url("..//blocks/catalog/__card-title/catalog__card-title.css");
+@import url("../blocks/featured/featured.css");
+@import url("..//blocks/footer/footer.css");
+
+@media (max-width: 600px) {
+    .catalog__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog__card {
+        flex: 1 0 auto;
+
+    }
+
+    .catalof__card.featured {
+        order: -1;
+    }
+}

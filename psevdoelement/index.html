@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./s.css">
+</head>
+<body>
+    <form class="form">
+        <label for="name" class="form__label">Имя</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name"
+            class="form__input" 
+            placeholder="Введите ваше имя"
+            required
+            minlength="3"
+            maxlength="50"/>
+        <span class="form__des">минимум 3 символа</span>
+    </form>
+
+    <form class="form">
+            <label for="name" class="form__label">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                class="form__input" 
+                placeholder="Введите вашу почту"
+                required
+                minlength="4"
+                maxlength="25"/>
+            <span class="form__des">введите действительный email</span>
+    </form>
+
+    <form class="form">
+                <label for="name" class="form__label">Телефон</label>
+                <input 
+                    type="text" 
+                    id="number" 
+                    name="number"
+                    class="form__input" 
+                    placeholder="Введите ваш номер телефона"
+                    required
+                    minlength="10"
+                    maxlength="10"/>
+                <span class="form__des">10 цифр, например: 1234567890</span>
+
+    </form>
+
+    <form class="form">
+        <label for="name" class="form__label">Выберите</label> 
+        <input type="text" list="browsers" id="" name="">
+        <datalist id="browsers">
+          <option value="Фотографии для начинающих">
+          <option value="Продвинутый курс">
+          <option value="Портретная фотография">
+        </datalist>
+    <form>
+        
+        
+        <option disabled selected value="">Выберите курс</option>
+        <option value="Врторой курс">Фотографии для начинающих</option>
+        <option value="Третий курс">Продвинутый курс</option>
+        <option value="Четвертый курс">Портретная фотография</option></select>
+        <span class="form__des">Выберите подходящий курс</span>
+    <h5>Коментарий</h5>
+    <textarea name="Coment" id="Coment" placeholder="Расскожите о вашем опыте (в фотографиях)"></textarea>
+    
+    <button type="submit">Sumbit</button>
+
+</body>
+</html>

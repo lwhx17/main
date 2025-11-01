@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусные рецепты</title>
+    <link rel="stylesheet" href="./ss.css">
+</head>
+<body>
+    <header>
+        <h1>Вкусные рецепты</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Мастер-класс</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Запишитесь на мастер-класс</h1>
+        <p>Выберите блюдо и дату, чтобы научиться готовить с нами.</p>
+        <form>
+            <fieldset>
+                <legend>Оставьте ваши данные</legend>
+                <div class="initial-name">
+                    <label for="name">Ваше имя*</label>
+                    <input placeholder="Форма имени - Иванов Иван Иванович" type="text" name="" id="name" required autofocus>
+                </div>
+                <br>
+                <div>
+                    <label type="email">Ваша почта*</label>
+                    <input placeholder="Форма почты - exampl@mail.ru" type="email" name="" id="email" required>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Выберите блюдо</legend>
+                <div>
+                    <label for="pasta">Паста</label>
+                    <input type="radio" id="pasta" name="dish" value="pasta" checked>
+                </div>
+                <div>
+                    <label for="pizza">Пицца</label>
+                    <input type="radio" id="pizza" name="dish" value="pizza" checked>
+                </div>
+                <div>
+                    <label for="tir">Тирамису</label>
+                    <input type="radio" id="tir" name="dish" value="tir" checked>
+                </div>
+            </fieldset>
+            <br>
+            <label>
+                Дата мастер-класса
+                <input type="date" name="date" min="2026-10-26" max="2026-10-30">
+            </label>
+            <br>
+            <br>
+            <label>
+                Оставьте дополнительные комментарии
+                <br>
+                <textarea name="text" rows="5" cols="30"></textarea>
+                <br>
+            </label>
+            <button type="submit">Записаться</button>
+        </form>
+    </main>
+    <footer>
+        <p>2025. Вкусные рецепты.</p>
+    </footer>
+</body>
+</html>

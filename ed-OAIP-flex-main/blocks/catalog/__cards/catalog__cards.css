@@ -1,0 +1,7 @@
+.catalog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-base);
+    justify-content: space-between;
+    object-fit: cover;
+}

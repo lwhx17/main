@@ -1,0 +1,91 @@
+\* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #1d1d1d;
+    color: #fff;
+  }
+  
+  .title {
+    padding: 1.5rem;
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    padding-block-end: 5rem;
+    text-align: center;
+  }
+  
+  .subtitle span {
+    color: orange;
+  }
+  
+  .demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .demo__item {
+    background-color: #4a4a4a;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .demo__item-title {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  } 
+  
+  .demo__item:hover {
+    background-color: orange;
+  }
+  
+  .demo__icon {
+    max-width: 90px;
+    transition: transform 2s ease-in-out;
+  }
+/* транс отвечает на анимацию у всех элементов */
+
+
+.translate:hover .demo__icon {
+    transition: transform 0.4 ease-out;
+    transform: translate(50px, 50px) rotate(3turn) ;
+}
+/* перемещение по оси х и у (вроде бы)*/
+
+.scale:hover .demo__icon {
+    transform: scale(2);
+    /* transform: scaleY(1.8); */
+}
+/*изменение по масштабу(вроде бы)*/
+
+.rotate:hover .demo__icon {
+    transform: rotate(3turn);
+}
+/*поворот элемента по оси(вроде бы)*/
+
+.skew:hover .demo__icon{
+    transform: skew(30deg);
+}
+/* делает наклон элемента  */ 

@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(230, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid red;
+    list-style: none;
+    height: 15000px;;
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    padding: 1rem;
+    background-color: rgb(129, 129, 129);
+    z-index: 100;
+}
+
+.header__list{
+    display: flex;
+    gap: 1rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-wrapper {
+    margin-block-start: 120px;
+    margin-block-end: 42px;
+}
+
+.cards {
+    margin-block-end: 2rem;
+}
+
+.cards__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, minmax(100px, 150px));
+    gap: 1rem;
+
+}
+
+.cards__item{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, );
+    border-radius: 10px;
+}
+
+.cards__card {
+    background-color: rgb(185, 185, 185);
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Favatarko.ru%2Fkartinka%2F13379&psig=AOvVaw3UwdZGRzSFqmrDuTYYsFtD&ust=1761389343734000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJihu-rUvJADFQAAAAAdAAAAABAE);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+
+    background: linear-gradient(24deg, rgb(2, 0, 143),rgb(0, 245, 245), rgb(0, 25, 134));
+    height: 100%;
+
+    z-index: 0;
+}
+
+.large{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.medium {
+    grid-row: span 2;
+    opacity: 0.6;
+}
+
+.blur {
+    filter: blur(10px);
+}
+
+.contrast {
+    filter: contrast(50%);
+}
+
+.grayscale{
+    filter: grayscale(100%);
+}
+
+.hue {
+    filter: hue-rotate(0.3turn);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.sepia{
+    filter: sepia(100%);
+}

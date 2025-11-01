@@ -1,0 +1,71 @@
+@keyframes loading {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+.loader { 
+    width: 242px;
+    height: 242px;    
+    aspect-ratio: 4/3;
+    border: 10px solid brown;
+    border-block-end-color: black;
+    border-radius: 50%;
+
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}  
+
+@keyframes rainbow {
+    12% {background-color: rgb(112, 5, 5); }
+    16.4% {background-color: rgb(241, 105, 14); }
+    33.2% {background-color: rgb(250, 213, 1); }
+    50% {background-color: rgb(38, 235, 12); }
+    66.9% {background-color: rgb(9, 218, 255); }
+    83.1% {background-color: rgb(6, 8, 184); }
+    100% {background-color: rgb(128, 17, 255); }
+}
+
+.rainbow {
+    width: 242px;
+    height: 242px;
+    border-radius: 10px;
+
+    animation: rainbow 10s linear infinite;
+
+}
+
+@keyframes glow {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: aquamarine;
+    }
+  }
+  
+  .light {
+    width: 142px;
+    height: 142px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+  
+    animation: glow 1s linear infinite;
+  }
+  
+  .light:nth-child(2) {
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .light:nth-child(3) {
+    animation-delay: 2s;
+  }

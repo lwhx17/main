@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    /*perspectiva*/
+    perspective: 1000px;
+}
+
+.card {
+    text-align: center;
+    width: 242px;
+    background-color: aqua;
+    padding: 2rem;
+    border-radius: 6px;
+
+    backface-visibility: hidden;
+    transform: translateZ(100px) rotateY(70deg) scale(2);
+    transition: all is ease-in-out;
+}
+
+.card:hover {
+    transform: translateZ(-200px) rotateY(2turn) scale(3);
+}
+
